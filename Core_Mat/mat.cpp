@@ -3,8 +3,8 @@
 #include <string.h>
 #include <vector>
 #include <iomanip>
-#include <opencv2/opencv.hpp>
-#include <opencv2/highgui.hpp>
+#include <opencv4/opencv2/opencv.hpp>
+#include <opencv4/opencv2/highgui.hpp>
 
 using namespace std;
 
@@ -33,17 +33,35 @@ int main()
 		  {0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 255},
 		  {0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 210, 220, 230, 240, 255}}};
 
+	cout<<"the original data is: \n";
 	for (int i = 0; i < 11; i++)
+	{
 		for (int j = 0; j < 26; j++)
-			cout << setprecision(3) << arr[i][j] << endl;
+			cout << setprecision(3) << arr[i][j] << ",";
+		cout << endl;
+	}
 
-	cv::Mat greyImg = cv::Mat(26, 11, CV_8U, &arr);
-	//std::string greyArrWindow = "Grey Array Image";
-	///cv::namedWindow(greyArrWindow, cv::WINDOW_AUTOSIZE);
+	//remember const!
+	const int ROWS = 11;
+	const int COLS = 26;
 
+	cv::Mat greyImg= cv::Mat(ROWS, COLS, CV_8UC3,cv::Scalar(0,0,255));
+	for (int row = 0; row < arr.size(); ++row)
+	{
+		//for each element in the current row
+		for (int col = 0; col < arr[row].size(); ++col)
+		{
+			greyImg.at<int>(row,col) = arr[row][col];
+		}
+	}
+
+	cout<<"the data in a mat is: \n";
 	for (int i = 0; i < 11; i++)
+	{
 		for (int j = 0; j < 26; j++)
-			cout << setprecision(3) << greyImg.at<int>(i, j) << endl;
+			cout << setprecision(3) << greyImg.at<int>(i, j) << ",";
+		cout << endl;
+	}
 
 	cout << "greyImg = " << endl
 		 << " " << greyImg << endl

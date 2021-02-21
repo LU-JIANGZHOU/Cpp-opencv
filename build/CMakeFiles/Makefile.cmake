@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "../01_LoadSaveImage/CMakeLists.txt"
   "../CMakeLists.txt"
   "../Core_Mat/CMakeLists.txt"
   "CMakeFiles/3.19.5/CMakeCCompiler.cmake"
@@ -47,9 +48,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "Core_Mat/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "01_LoadSaveImage/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "Core_Mat/CMakeFiles/mat.dir/DependInfo.cmake"
+  "01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/DependInfo.cmake"
   )

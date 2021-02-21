@@ -73,18 +73,39 @@ CMAKE_BINARY_DIR = /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build
 
 # The main recursive "all" target.
 all: Core_Mat/all
+all: 01_LoadSaveImage/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: Core_Mat/preinstall
+preinstall: 01_LoadSaveImage/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: Core_Mat/clean
+clean: 01_LoadSaveImage/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory 01_LoadSaveImage
+
+# Recursive "all" directory target.
+01_LoadSaveImage/all: 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/all
+
+.PHONY : 01_LoadSaveImage/all
+
+# Recursive "preinstall" directory target.
+01_LoadSaveImage/preinstall:
+
+.PHONY : 01_LoadSaveImage/preinstall
+
+# Recursive "clean" directory target.
+01_LoadSaveImage/clean: 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/clean
+
+.PHONY : 01_LoadSaveImage/clean
 
 #=============================================================================
 # Directory level rules for directory Core_Mat
@@ -111,7 +132,7 @@ Core_Mat/clean: Core_Mat/CMakeFiles/mat.dir/clean
 Core_Mat/CMakeFiles/mat.dir/all:
 	$(MAKE) $(MAKESILENT) -f Core_Mat/CMakeFiles/mat.dir/build.make Core_Mat/CMakeFiles/mat.dir/depend
 	$(MAKE) $(MAKESILENT) -f Core_Mat/CMakeFiles/mat.dir/build.make Core_Mat/CMakeFiles/mat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles --progress-num=1,2 "Built target mat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles --progress-num=3,4 "Built target mat"
 .PHONY : Core_Mat/CMakeFiles/mat.dir/all
 
 # Build rule for subdir invocation for target.
@@ -130,6 +151,33 @@ mat: Core_Mat/CMakeFiles/mat.dir/rule
 Core_Mat/CMakeFiles/mat.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Core_Mat/CMakeFiles/mat.dir/build.make Core_Mat/CMakeFiles/mat.dir/clean
 .PHONY : Core_Mat/CMakeFiles/mat.dir/clean
+
+#=============================================================================
+# Target rules for target 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir
+
+# All Build rule for target.
+01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/all:
+	$(MAKE) $(MAKESILENT) -f 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/build.make 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/depend
+	$(MAKE) $(MAKESILENT) -f 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/build.make 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles --progress-num=1,2 "Built target 01_LoadSaveImage"
+.PHONY : 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/all
+
+# Build rule for subdir invocation for target.
+01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles 0
+.PHONY : 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/rule
+
+# Convenience name for target.
+01_LoadSaveImage: 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/rule
+
+.PHONY : 01_LoadSaveImage
+
+# clean rule for target.
+01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/build.make 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/clean
+.PHONY : 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

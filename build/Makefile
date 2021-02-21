@@ -142,6 +142,19 @@ mat/fast:
 	$(MAKE) $(MAKESILENT) -f Core_Mat/CMakeFiles/mat.dir/build.make Core_Mat/CMakeFiles/mat.dir/build
 .PHONY : mat/fast
 
+#=============================================================================
+# Target rules for targets named 01_LoadSaveImage
+
+# Build rule for target.
+01_LoadSaveImage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 01_LoadSaveImage
+.PHONY : 01_LoadSaveImage
+
+# fast build rule for target.
+01_LoadSaveImage/fast:
+	$(MAKE) $(MAKESILENT) -f 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/build.make 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/build
+.PHONY : 01_LoadSaveImage/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -150,6 +163,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... 01_LoadSaveImage"
 	@echo "... mat"
 .PHONY : help
 

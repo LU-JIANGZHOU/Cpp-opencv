@@ -13,6 +13,6 @@ message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
 
 # add tutorials projects
 add_subdirectory(Core_Mat)
-#add_subdirectory(core_2)
+add_subdirectory(01_LoadSaveImage)
 #add_subdirectory()
 #add_subdirectory()

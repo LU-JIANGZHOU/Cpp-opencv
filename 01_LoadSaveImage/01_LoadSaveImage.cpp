@@ -10,7 +10,8 @@ using namespace cv;
 
 int main()
 {
-	Mat acesColor= imread("aces.png", IMREAD_COLOR);
+	//Mat acesColor= imread("aces.png", IMREAD_COLOR);
+	Mat acesColor= imread("aces.png", IMREAD_UNCHANGED);
 	Mat acesGrey=imread("aces.png", IMREAD_GRAYSCALE);
 
 	imshow("Aces Color", acesColor);

@@ -6,3 +6,6 @@
 /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/01_LoadSaveImage/CMakeFiles/rebuild_cache.dir
 /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir
 /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/01_LoadSaveImage/CMakeFiles/edit_cache.dir
+/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/02_window/CMakeFiles/rebuild_cache.dir
+/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/02_window/CMakeFiles/02_window.dir
+/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/02_window/CMakeFiles/edit_cache.dir

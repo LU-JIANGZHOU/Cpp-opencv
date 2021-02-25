@@ -1,2 +1,4 @@
-add_executable(0 0.cpp)
-target_link_libraries( mat ${OpenCV_LIBS})
+file(GLOB ImageFiles ${CMAKE_CURRENT_SOURCE_DIR}/*.png)
+file(COPY ${ImageFiles} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+add_executable(02_window 02_window.cpp)
+target_link_libraries(02_window ${OpenCV_LIBS})

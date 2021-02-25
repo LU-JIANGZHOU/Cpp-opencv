@@ -58,10 +58,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/793/bin/cmake
+CMAKE_COMMAND = /snap/cmake/805/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/793/bin/cmake -E rm -f
+RM = /snap/cmake/805/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/793/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/805/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -155,6 +155,19 @@ mat/fast:
 	$(MAKE) $(MAKESILENT) -f 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/build.make 01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/build
 .PHONY : 01_LoadSaveImage/fast
 
+#=============================================================================
+# Target rules for targets named 02_window
+
+# Build rule for target.
+02_window: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 02_window
+.PHONY : 02_window
+
+# fast build rule for target.
+02_window/fast:
+	$(MAKE) $(MAKESILENT) -f 02_window/CMakeFiles/02_window.dir/build.make 02_window/CMakeFiles/02_window.dir/build
+.PHONY : 02_window/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,6 +177,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 01_LoadSaveImage"
+	@echo "... 02_window"
 	@echo "... mat"
 .PHONY : help
 

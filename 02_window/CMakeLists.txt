@@ -1,4 +1,6 @@
 file(GLOB ImageFiles ${CMAKE_CURRENT_SOURCE_DIR}/*.png)
 file(COPY ${ImageFiles} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(GLOB ImageFiles ${CMAKE_CURRENT_SOURCE_DIR}/*.jpg)
+file(COPY ${ImageFiles} DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 add_executable(02_window 02_window.cpp)
 target_link_libraries(02_window ${OpenCV_LIBS})

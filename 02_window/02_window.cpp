@@ -20,13 +20,13 @@ int main()
 	imshow("Color", focalFossaC);
 	imshow("Fixed", focalFossaG);
 
-	resizeWindow("Color", (focalFossaC.cols)/4, (focalFossaC.rows)/4 );
-	//resizeWindow("Fixed", focalFossaG.cols , focalFossaG.rows );
+	resizeWindow("Color", focalFossaC.cols, focalFossaC.rows );
+	resizeWindow("Fixed", focalFossaG.cols , focalFossaG.rows );
 	//imwrite("acesColor.jpg", acesColor);
 	//imwrite("acesGrey.jpg", acesGrey);
 
-	//moveWindow("Color", 20, 20);
-	//moveWindow("fixed", 25+focalFossaC.cols, 20);
+	moveWindow("Color", 200, 200);
+	moveWindow("Fixed", 250+focalFossaC.cols, 200);
 	waitKey();
 
 	return EXIT_SUCCESS;

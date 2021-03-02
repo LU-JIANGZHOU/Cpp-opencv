@@ -47,6 +47,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/Core_Mat/cmake_install.cmake")
   include("/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/01_LoadSaveImage/cmake_install.cmake")
   include("/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/02_window/cmake_install.cmake")
+  include("/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/03_pixels/cmake_install.cmake")
 
 endif()
 

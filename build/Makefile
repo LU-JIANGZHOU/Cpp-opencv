@@ -168,6 +168,19 @@ mat/fast:
 	$(MAKE) $(MAKESILENT) -f 02_window/CMakeFiles/02_window.dir/build.make 02_window/CMakeFiles/02_window.dir/build
 .PHONY : 02_window/fast
 
+#=============================================================================
+# Target rules for targets named 03-pixels
+
+# Build rule for target.
+03-pixels: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 03-pixels
+.PHONY : 03-pixels
+
+# fast build rule for target.
+03-pixels/fast:
+	$(MAKE) $(MAKESILENT) -f 03_pixels/CMakeFiles/03-pixels.dir/build.make 03_pixels/CMakeFiles/03-pixels.dir/build
+.PHONY : 03-pixels/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -178,6 +191,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... 01_LoadSaveImage"
 	@echo "... 02_window"
+	@echo "... 03-pixels"
 	@echo "... mat"
 .PHONY : help
 

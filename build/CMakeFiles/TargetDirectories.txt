@@ -12,3 +12,6 @@
 /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/03_pixels/CMakeFiles/rebuild_cache.dir
 /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/03_pixels/CMakeFiles/03-pixels.dir
 /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/03_pixels/CMakeFiles/edit_cache.dir
+/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/04_splitMerge/CMakeFiles/rebuild_cache.dir
+/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/04_splitMerge/CMakeFiles/04-splitMerge.dir
+/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/04_splitMerge/CMakeFiles/edit_cache.dir

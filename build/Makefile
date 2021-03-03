@@ -181,6 +181,19 @@ mat/fast:
 	$(MAKE) $(MAKESILENT) -f 03_pixels/CMakeFiles/03-pixels.dir/build.make 03_pixels/CMakeFiles/03-pixels.dir/build
 .PHONY : 03-pixels/fast
 
+#=============================================================================
+# Target rules for targets named 04-splitMerge
+
+# Build rule for target.
+04-splitMerge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 04-splitMerge
+.PHONY : 04-splitMerge
+
+# fast build rule for target.
+04-splitMerge/fast:
+	$(MAKE) $(MAKESILENT) -f 04_splitMerge/CMakeFiles/04-splitMerge.dir/build.make 04_splitMerge/CMakeFiles/04-splitMerge.dir/build
+.PHONY : 04-splitMerge/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +205,7 @@ help:
 	@echo "... 01_LoadSaveImage"
 	@echo "... 02_window"
 	@echo "... 03-pixels"
+	@echo "... 04-splitMerge"
 	@echo "... mat"
 .PHONY : help
 

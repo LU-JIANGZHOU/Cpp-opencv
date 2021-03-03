@@ -10,6 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../01_LoadSaveImage/CMakeLists.txt"
   "../02_window/CMakeLists.txt"
   "../03_pixels/CMakeLists.txt"
+  "../04_splitMerge/CMakeLists.txt"
   "../CMakeLists.txt"
   "../Core_Mat/CMakeLists.txt"
   "CMakeFiles/3.19.6/CMakeCCompiler.cmake"
@@ -53,6 +54,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "01_LoadSaveImage/CMakeFiles/CMakeDirectoryInformation.cmake"
   "02_window/CMakeFiles/CMakeDirectoryInformation.cmake"
   "03_pixels/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "04_splitMerge/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -61,4 +63,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "01_LoadSaveImage/CMakeFiles/01_LoadSaveImage.dir/DependInfo.cmake"
   "02_window/CMakeFiles/02_window.dir/DependInfo.cmake"
   "03_pixels/CMakeFiles/03-pixels.dir/DependInfo.cmake"
+  "04_splitMerge/CMakeFiles/04-splitMerge.dir/DependInfo.cmake"
   )

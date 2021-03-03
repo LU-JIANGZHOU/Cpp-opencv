@@ -76,6 +76,7 @@ all: Core_Mat/all
 all: 01_LoadSaveImage/all
 all: 02_window/all
 all: 03_pixels/all
+all: 04_splitMerge/all
 
 .PHONY : all
 
@@ -84,6 +85,7 @@ preinstall: Core_Mat/preinstall
 preinstall: 01_LoadSaveImage/preinstall
 preinstall: 02_window/preinstall
 preinstall: 03_pixels/preinstall
+preinstall: 04_splitMerge/preinstall
 
 .PHONY : preinstall
 
@@ -92,6 +94,7 @@ clean: Core_Mat/clean
 clean: 01_LoadSaveImage/clean
 clean: 02_window/clean
 clean: 03_pixels/clean
+clean: 04_splitMerge/clean
 
 .PHONY : clean
 
@@ -150,6 +153,24 @@ clean: 03_pixels/clean
 .PHONY : 03_pixels/clean
 
 #=============================================================================
+# Directory level rules for directory 04_splitMerge
+
+# Recursive "all" directory target.
+04_splitMerge/all: 04_splitMerge/CMakeFiles/04-splitMerge.dir/all
+
+.PHONY : 04_splitMerge/all
+
+# Recursive "preinstall" directory target.
+04_splitMerge/preinstall:
+
+.PHONY : 04_splitMerge/preinstall
+
+# Recursive "clean" directory target.
+04_splitMerge/clean: 04_splitMerge/CMakeFiles/04-splitMerge.dir/clean
+
+.PHONY : 04_splitMerge/clean
+
+#=============================================================================
 # Directory level rules for directory Core_Mat
 
 # Recursive "all" directory target.
@@ -174,7 +195,7 @@ Core_Mat/clean: Core_Mat/CMakeFiles/mat.dir/clean
 Core_Mat/CMakeFiles/mat.dir/all:
 	$(MAKE) $(MAKESILENT) -f Core_Mat/CMakeFiles/mat.dir/build.make Core_Mat/CMakeFiles/mat.dir/depend
 	$(MAKE) $(MAKESILENT) -f Core_Mat/CMakeFiles/mat.dir/build.make Core_Mat/CMakeFiles/mat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles --progress-num=7,8 "Built target mat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles --progress-num=9,10 "Built target mat"
 .PHONY : Core_Mat/CMakeFiles/mat.dir/all
 
 # Build rule for subdir invocation for target.
@@ -274,6 +295,33 @@ Core_Mat/CMakeFiles/mat.dir/clean:
 03_pixels/CMakeFiles/03-pixels.dir/clean:
 	$(MAKE) $(MAKESILENT) -f 03_pixels/CMakeFiles/03-pixels.dir/build.make 03_pixels/CMakeFiles/03-pixels.dir/clean
 .PHONY : 03_pixels/CMakeFiles/03-pixels.dir/clean
+
+#=============================================================================
+# Target rules for target 04_splitMerge/CMakeFiles/04-splitMerge.dir
+
+# All Build rule for target.
+04_splitMerge/CMakeFiles/04-splitMerge.dir/all:
+	$(MAKE) $(MAKESILENT) -f 04_splitMerge/CMakeFiles/04-splitMerge.dir/build.make 04_splitMerge/CMakeFiles/04-splitMerge.dir/depend
+	$(MAKE) $(MAKESILENT) -f 04_splitMerge/CMakeFiles/04-splitMerge.dir/build.make 04_splitMerge/CMakeFiles/04-splitMerge.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles --progress-num=7,8 "Built target 04-splitMerge"
+.PHONY : 04_splitMerge/CMakeFiles/04-splitMerge.dir/all
+
+# Build rule for subdir invocation for target.
+04_splitMerge/CMakeFiles/04-splitMerge.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 04_splitMerge/CMakeFiles/04-splitMerge.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles 0
+.PHONY : 04_splitMerge/CMakeFiles/04-splitMerge.dir/rule
+
+# Convenience name for target.
+04-splitMerge: 04_splitMerge/CMakeFiles/04-splitMerge.dir/rule
+
+.PHONY : 04-splitMerge
+
+# clean rule for target.
+04_splitMerge/CMakeFiles/04-splitMerge.dir/clean:
+	$(MAKE) $(MAKESILENT) -f 04_splitMerge/CMakeFiles/04-splitMerge.dir/build.make 04_splitMerge/CMakeFiles/04-splitMerge.dir/clean
+.PHONY : 04_splitMerge/CMakeFiles/04-splitMerge.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

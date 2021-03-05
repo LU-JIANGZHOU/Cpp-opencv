@@ -194,6 +194,19 @@ mat/fast:
 	$(MAKE) $(MAKESILENT) -f 04_splitMerge/CMakeFiles/04-splitMerge.dir/build.make 04_splitMerge/CMakeFiles/04-splitMerge.dir/build
 .PHONY : 04-splitMerge/fast
 
+#=============================================================================
+# Target rules for targets named 05-dft
+
+# Build rule for target.
+05-dft: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 05-dft
+.PHONY : 05-dft
+
+# fast build rule for target.
+05-dft/fast:
+	$(MAKE) $(MAKESILENT) -f 05_DFT/CMakeFiles/05-dft.dir/build.make 05_DFT/CMakeFiles/05-dft.dir/build
+.PHONY : 05-dft/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,6 +219,7 @@ help:
 	@echo "... 02_window"
 	@echo "... 03-pixels"
 	@echo "... 04-splitMerge"
+	@echo "... 05-dft"
 	@echo "... mat"
 .PHONY : help
 

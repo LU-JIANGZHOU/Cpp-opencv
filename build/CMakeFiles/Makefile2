@@ -77,6 +77,7 @@ all: 01_LoadSaveImage/all
 all: 02_window/all
 all: 03_pixels/all
 all: 04_splitMerge/all
+all: 05_DFT/all
 
 .PHONY : all
 
@@ -86,6 +87,7 @@ preinstall: 01_LoadSaveImage/preinstall
 preinstall: 02_window/preinstall
 preinstall: 03_pixels/preinstall
 preinstall: 04_splitMerge/preinstall
+preinstall: 05_DFT/preinstall
 
 .PHONY : preinstall
 
@@ -95,6 +97,7 @@ clean: 01_LoadSaveImage/clean
 clean: 02_window/clean
 clean: 03_pixels/clean
 clean: 04_splitMerge/clean
+clean: 05_DFT/clean
 
 .PHONY : clean
 
@@ -171,6 +174,24 @@ clean: 04_splitMerge/clean
 .PHONY : 04_splitMerge/clean
 
 #=============================================================================
+# Directory level rules for directory 05_DFT
+
+# Recursive "all" directory target.
+05_DFT/all: 05_DFT/CMakeFiles/05-dft.dir/all
+
+.PHONY : 05_DFT/all
+
+# Recursive "preinstall" directory target.
+05_DFT/preinstall:
+
+.PHONY : 05_DFT/preinstall
+
+# Recursive "clean" directory target.
+05_DFT/clean: 05_DFT/CMakeFiles/05-dft.dir/clean
+
+.PHONY : 05_DFT/clean
+
+#=============================================================================
 # Directory level rules for directory Core_Mat
 
 # Recursive "all" directory target.
@@ -195,7 +216,7 @@ Core_Mat/clean: Core_Mat/CMakeFiles/mat.dir/clean
 Core_Mat/CMakeFiles/mat.dir/all:
 	$(MAKE) $(MAKESILENT) -f Core_Mat/CMakeFiles/mat.dir/build.make Core_Mat/CMakeFiles/mat.dir/depend
 	$(MAKE) $(MAKESILENT) -f Core_Mat/CMakeFiles/mat.dir/build.make Core_Mat/CMakeFiles/mat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles --progress-num=9,10 "Built target mat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles --progress-num=11,12 "Built target mat"
 .PHONY : Core_Mat/CMakeFiles/mat.dir/all
 
 # Build rule for subdir invocation for target.
@@ -322,6 +343,33 @@ Core_Mat/CMakeFiles/mat.dir/clean:
 04_splitMerge/CMakeFiles/04-splitMerge.dir/clean:
 	$(MAKE) $(MAKESILENT) -f 04_splitMerge/CMakeFiles/04-splitMerge.dir/build.make 04_splitMerge/CMakeFiles/04-splitMerge.dir/clean
 .PHONY : 04_splitMerge/CMakeFiles/04-splitMerge.dir/clean
+
+#=============================================================================
+# Target rules for target 05_DFT/CMakeFiles/05-dft.dir
+
+# All Build rule for target.
+05_DFT/CMakeFiles/05-dft.dir/all:
+	$(MAKE) $(MAKESILENT) -f 05_DFT/CMakeFiles/05-dft.dir/build.make 05_DFT/CMakeFiles/05-dft.dir/depend
+	$(MAKE) $(MAKESILENT) -f 05_DFT/CMakeFiles/05-dft.dir/build.make 05_DFT/CMakeFiles/05-dft.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles --progress-num=9,10 "Built target 05-dft"
+.PHONY : 05_DFT/CMakeFiles/05-dft.dir/all
+
+# Build rule for subdir invocation for target.
+05_DFT/CMakeFiles/05-dft.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 05_DFT/CMakeFiles/05-dft.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/CMakeFiles 0
+.PHONY : 05_DFT/CMakeFiles/05-dft.dir/rule
+
+# Convenience name for target.
+05-dft: 05_DFT/CMakeFiles/05-dft.dir/rule
+
+.PHONY : 05-dft
+
+# clean rule for target.
+05_DFT/CMakeFiles/05-dft.dir/clean:
+	$(MAKE) $(MAKESILENT) -f 05_DFT/CMakeFiles/05-dft.dir/build.make 05_DFT/CMakeFiles/05-dft.dir/clean
+.PHONY : 05_DFT/CMakeFiles/05-dft.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

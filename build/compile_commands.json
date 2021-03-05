@@ -23,5 +23,10 @@
   "directory": "/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/04_splitMerge",
   "command": "/bin/x86_64-linux-gnu-g++-9  -isystem /usr/include/opencv4  -std=c++17 -g -o CMakeFiles/04-splitMerge.dir/04_splitMerge.cpp.o -c /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/04_splitMerge/04_splitMerge.cpp",
   "file": "/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/04_splitMerge/04_splitMerge.cpp"
+},
+{
+  "directory": "/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/build/05_DFT",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -isystem /usr/include/opencv4  -std=c++17 -g -o CMakeFiles/05-dft.dir/05_dft.cpp.o -c /home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/05_DFT/05_dft.cpp",
+  "file": "/home/lujiangzhou/Desktop/CppWorkSpace/Cpp-opencv/05_DFT/05_dft.cpp"
 }
 ]

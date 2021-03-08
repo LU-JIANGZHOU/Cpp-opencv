@@ -23,7 +23,6 @@ Mat generateDFT(Mat src)
 	Mat dftOrg;
 
 	dft(srcDft, dftOrg, DFT_COMPLEX_OUTPUT);
-
 	return dftOrg;
 };
 
